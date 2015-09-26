@@ -568,3 +568,6 @@ dd p:first-child {
   font-size: .85em;
   font-style: italic;
 }
+.boxed {
+  border: 1px solid black ;
+} 
