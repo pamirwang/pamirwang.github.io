@@ -118,7 +118,51 @@ div.shell {
   margin: 0 auto;
 }
 
+a#forkme_banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 138px;
+  height: 138px;
+  display: block;
+  background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;
+  text-indent: -9000px;
+  z-index: 3;
+}
 
+a#forkme_banner:hover {
+  background-position: 0 -138px;
+}
+
+/* header */
+
+header {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 1500px;
+  top: 38px;
+}
+
+header span.ribbon-inner {
+  position: relative;
+  display: block;
+  background-color: #cd596b;
+  border: 4px solid #7c334f;
+  padding: 2px;
+  z-index: 1;
+}
+
+header span.left-tail, header span.right-tail {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 105px;
+  background: transparent url(../images/ribbon-tail-sprite.png) 0 0 no-repeat;
+  position: absolute;
+  bottom: -37px;
+  z-index: 0;
+}
 
 header span.left-tail {
   background-position: 0 0;
@@ -131,21 +175,21 @@ header span.right-tail {
 }
 
 header h1 {
-  background-color: #fffffe;
+  background-color: #7c334f;
   font-size: 2.5em;
   font-weight: 800;
   font-style: normal;
   text-transform: uppercase;
-  color: #fffffe;
+  color: #ece4d8;
   text-align: center;
   line-height:1;
   padding: 14px 20px 0;
 }
 
 header h2 {
-  background-color: #fffffe;
+  background-color: #7c334f;
   font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
-  color: #fffffe;
+  color: #e69b95;
   padding-bottom: 14px;
   margin-top: -3px;
   text-align: center;
@@ -180,7 +224,7 @@ section#downloads a {
   background: transparent url(../images/download-sprite.png) 0 0 no-repeat;
   text-align: center;
   line-height: 1;
-  color: #fffffe;
+  color: #fff;
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   font-weight: 800;
   font-size: 1.3em;
@@ -248,8 +292,8 @@ footer span.ribbon-outer {
 footer span.ribbon-inner {
   position: relative;
   display: block;
-  background-color: #fffffe;
-  border: 2px solid #fffffe;
+  background-color: #cd596b;
+  border: 2px solid #7c334f;
   padding: 1px;
   z-index: 1;
 }
@@ -258,17 +302,17 @@ footer p {
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   font-weight: bold;
   font-size: .8em;
-  color: #fffffe;
+  color: #8b786f;
 }
 
 footer a {
-  color: #fffffe;
+  color: #cd596b;
 }
 
 footer span.ribbon-inner p {
-  background-color: #fffffe;
+  background-color: #7c334f;
   margin: 0;
-  color: #fffffe;
+  color: #e69b95;
   font: bold italic 12px/1 Georgia, Times, “Times New Roman”, serif;
   padding-bottom:4px;
 }
@@ -276,7 +320,7 @@ footer span.ribbon-inner p {
 footer span.ribbon-inner a {
   position: relative;
   bottom: -1px;
-  color: #fffffe;
+  color: #7eb0d2;
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   text-transform: uppercase;
   font-style: normal;
@@ -285,7 +329,7 @@ footer span.ribbon-inner a {
 }
 
 footer span.ribbon-inner a:hover {
-  color: #fffffe;
+  color: #7eb0d2;
 }
 
 footer span.left-tail, footer span.right-tail {
@@ -320,14 +364,15 @@ footer span.octocat {
 /* content */
 
 body {
-  background: #fffffe;
+  background-image: url(http://oi59.tinypic.com/1zpph1g.jpg);
+  background-attachment: fixed;
   font: normal normal 15px/1.5 Georgia, Palatino,” Palatino Linotype”, Times, “Times New Roman”, serif;
-  color: #fffffe;
+  color: #544943;
   -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover {
-  color: #fffffe;
+  color: #417090;
 }
 
 a {
@@ -374,7 +419,7 @@ ul li {
 blockquote {
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   margin: 20px 0;
-  color: #fffffe;
+  color: #8b786f;
   padding-left: 1.35em;
   background: transparent url('../images/blockquote-gfx.png') 0 4px no-repeat;
 }
@@ -396,7 +441,7 @@ hr {
 }
 
 code {
-  background: #fffffe;
+  background: #fff6e9;
   font: normal normal .8em/1.7 "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
   padding: 0 5px 1px;
 }
@@ -404,8 +449,8 @@ code {
 pre {
   margin: 10px 0 20px;
   padding: .7em;
-  background: #fffffe;
-  border-bottom: 2px solid #fffffe;
+  background: #fff6e9;
+  border-bottom: 2px solid #bdb6ad;
   font: normal normal .9em/1.7 "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
   overflow: auto;
 }
@@ -419,7 +464,7 @@ table {
   display: table;
   width: 100%;
   border-collapse: separate;
-  border-bottom: 2px solid #fffffe;
+  border-bottom: 2px solid #bdb6ad;
   margin: 10px 0;
 }
 
@@ -430,18 +475,18 @@ tr {
 th {
   display: table-cell;
   padding: 2px 10px;
-  border: solid #fffffe;
+  border: solid #ece4d8;
   border-width: 0 2px 2px 0;
-  color: #fffffe;
+  color: #cd596b;
   font-family: 'Open Sans', Myriad, Calibri, sans-serif;
   font-weight: bold;
-  font-size: .85em;
+  font-size: 1em;
 }
 
 td {
   display: table-cell;
   padding: 0 .7em;
-  border: solid #fffffe;
+  border: solid #ece4d8;
   border-width: 0 2px 2px 0;
 }
 
@@ -482,9 +527,9 @@ dd p:first-child {
 }
 
 .header-level-1 {
-  font-size: 1.85em;
-  border-bottom: .2em double #fffffe;
-  color: #fffffe;
+  font-size: 5.5em;
+  border-bottom: .2em double #d3ccc1;
+  color: #7c334f;
   text-align: center;
   font-style: italic;
   margin: 1.1em 0 .38em;
@@ -494,9 +539,9 @@ dd p:first-child {
 
 .header-level-2 {
   font-size: 1.58em;
-  color: #fffffe;
+  color: #7c334f;
   margin: .95em 0 .5em;
-  border-bottom: .1em solid #fffffe;
+  border-bottom: .1em solid #D3CCC1;
   line-height: 1.2;
   padding-bottom: 10px
 }
@@ -509,13 +554,13 @@ dd p:first-child {
 .header-level-4 {
   margin: .6em 0;
   font-size: 1.2em;
-  color: #fffffe;
+  color: #cd596b;
 }
 
 .header-level-5 {
   margin: .7em 0;
   font-size: 1em;
-  color: #fffffe;
+  color: #8b786f;
 }
 
 .header-level-6 {
