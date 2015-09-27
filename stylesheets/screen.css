@@ -528,8 +528,6 @@ dd p:first-child {
 
 .header-level-1 {
   font-size: 1.5em;
-  border-top: .1em double #000000;
-  border-bottom: .1em double #000000;
   color: #000000;
   text-align: center;
   font-style: italic;
