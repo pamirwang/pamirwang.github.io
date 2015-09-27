@@ -528,7 +528,7 @@ dd p:first-child {
 
 .header-level-1 {
   font-size: 1.5em;
-  border-bottom: .2em double #d3ccc1;
+  border-bottom: .1em double #000000;
   color: #000000;
   text-align: center;
   font-style: italic;
