@@ -568,3 +568,8 @@ dd p:first-child {
   font-style: italic;
 }
 
+
+p.one {
+    border-style: solid;
+    border-width: 1px;
+}
